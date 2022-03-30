@@ -28,7 +28,7 @@ main{
 .content-container h3{
     color: var(--accent-color);
     font-size: 3rem;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 .content-container p{
@@ -37,7 +37,7 @@ main{
     display: flex;
     align-items: center;
     color: #fff;
-    font-weight: 200;
+    font-weight: 280;
 }
 
 .button{
@@ -54,6 +54,5 @@ main{
 }
 
 .social-container{
-    background-color: lightskyblue;
     width: 48px;
 }

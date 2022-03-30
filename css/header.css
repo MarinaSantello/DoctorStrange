@@ -16,8 +16,8 @@ header{
 
 .links-container a{
     text-shadow: 2px 2px 8px black;
-    padding: 5px 10px;
-    border-radius: 15px;
+    padding: 12px 10px;
+    border-radius: 12px;
 }
 
 .links-container a:hover{
