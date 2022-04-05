@@ -93,3 +93,30 @@ main{
     border: none;
     transition: all 0.8s;
 }
+
+@media (max-width:768px){
+    .content-container p{
+        display: none;
+    }
+    .social-container{
+        display: none;
+    }
+    .content-container{
+        gap: 15px;
+        justify-content: flex-end;
+        align-items: center;
+        padding-bottom: 40px;
+    }
+    .content-container h1{
+        font-size: 4rem;
+        line-height: 2.5rem;
+        font-weight: 135;
+    }
+    .content-container h3{
+        font-size: 1.49rem;
+        height: 55px;
+    }
+    .Doctor{
+        font-size: 1.5rem;
+    }
+}

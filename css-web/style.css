@@ -1,0 +1,26 @@
+:root{
+    --accent-color: #FF031A
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(90deg, #000, #000E 30%, #000A 50%, #0000),
+                url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    background-blend-mode: darken;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 128px;
+}
+
+@media (max-width: 768px){
+    body{
+        padding: 30px 30px;
+        background-color: #000a;
+        background-image: url(../img/background.jpg);
+        background-blend-mode: darken;
+        background-position: 90%;
+    }
+}

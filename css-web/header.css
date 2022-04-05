@@ -1,0 +1,36 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links-container{
+    height: 40px;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.links-container a{
+    text-shadow: 2px 2px 8px black;
+    padding: 12px 10px;
+    border-radius: 12px;
+}
+
+.links-container a:hover{
+    background-color: var(--accent-color);
+    text-shadow: none;
+    transition: all 1s;
+}
+
+@media (max-width: 768px){
+    header{
+        height: 50px;
+    }
+    .links-container{
+        display: none;
+    }
+}
