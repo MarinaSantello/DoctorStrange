@@ -14,11 +14,3 @@ body{
     flex-direction: column;
     padding: 80px 128px;
 }
-
-footer{
-    color: #fff;
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-}

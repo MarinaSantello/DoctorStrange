@@ -1,0 +1,7 @@
+footer{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    font-weight: 150;
+}
