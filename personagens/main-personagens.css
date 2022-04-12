@@ -1,5 +1,38 @@
+main{
+    flex-grow: 2;
+}
+
 .title {
-    color:#fff;
+    height: 10%;
+    color:#ECEDF1;
     font-family: 'Mulish', sans-serif;
-    font-;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.info {
+    display: flex;
+}
+
+.strange,
+.wanda,
+.profX,
+.wong,
+.miss {
+    display: flex;
+    gap: 5px;
+}
+
+.img-content {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #000;
+}
+
+.name-content {
+    color: #2F2C38;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
 }
