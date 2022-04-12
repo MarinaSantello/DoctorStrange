@@ -14,6 +14,11 @@ header{
     font-size: 1.1rem;
 }
 
+.nav {
+    display: flex;
+    align-items: center;
+}
+
 .links-container a{
     text-shadow: 2px 2px 8px black;
     padding: 12px 10px;
@@ -31,6 +36,27 @@ header{
         height: 50px;
     }
     .links-container{
-        display: none;
+        gap: 65px;
+        background-color: #000;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 2.5rem;
+        font-weight: 300;
+        transform: translate(100%);
+        transition: all .8s;
+    }
+    .menu-burger-container.show ~ .links-container {
+        transform: translate(0);
+    }
+    .links-container a:hover {
+        background-color: transparent;
+        border-radius: 25px;
+        border: 2px solid #fff;
     }
 }
