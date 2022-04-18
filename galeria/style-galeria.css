@@ -1,0 +1,19 @@
+:root{
+    --accent-color: #FF031A
+}
+:root{
+    --background-color: #05182fb0
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(180deg, var(--background-color), var(--background-color) 50%,var(--background-color)),
+                url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    background-blend-mode: darken;
+    display: flex;
+    flex-direction: column;
+    padding: 70px 128px;
+}

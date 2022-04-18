@@ -23,6 +23,7 @@ header{
     text-shadow: 2px 2px 8px black;
     padding: 12px 10px;
     border-radius: 12px;
+    transition: .5s;
 }
 
 .links-container a:hover{

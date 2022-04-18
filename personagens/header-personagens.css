@@ -5,7 +5,7 @@ header{
 }
 
 .links-container{
-    height: 52px;
+    height: 40px;
     display: flex;
     gap: 25px;
     align-items: center;
@@ -18,10 +18,56 @@ header{
     text-shadow: 2px 2px 8px black;
     padding: 12px 10px;
     border-radius: 12px;
+    transition: .5s;
+}
+
+.title{
+    box-shadow: 0px 0px 4px #fff;
 }
 
 .links-container a:hover{
-    background-color: var(--accent-color);
+    background-color: rgba(255, 255, 255, 0.5);
     text-shadow: none;
+    box-shadow: none;
     transition: all 1s;
+}
+
+@media (max-width: 768px){
+    header{
+        height: 50px;
+    }
+    .links-container{
+        gap: 65px;
+        background-color: #000;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 2.5rem;
+        font-weight: 300;
+        transform: translate(100%);
+        transition: all .8s;
+    }
+    .menu-burger-container.show ~ .links-container {
+        transform: translate(0);
+    }
+    .links-container a:hover {
+        background-color: transparent;
+        border-radius: 25px;
+        border: 2px solid #fff;
+    }
+}
+
+/*
+.links-container a:hover{
+    border: 1.5px solid #fff;
+    padding: 12px 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-shadow: none;
+    box-shadow: none;
+    transition: all .5s;
 }

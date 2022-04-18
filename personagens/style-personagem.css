@@ -5,6 +5,11 @@
     --background-color: #05182fb0
 }
 
+body, html{
+    position: relative;
+    overflow: hidden;
+}
+
 body{
     height: 100vh;
     background: linear-gradient(180deg, var(--background-color), var(--background-color) 50%,var(--background-color)),
@@ -15,5 +20,35 @@ body{
     background-blend-mode: darken;
     display: flex;
     flex-direction: column;
-    padding: 80px 128px;
+    padding: 70px 128px;
+}
+
+@media (max-width: 768px){
+    body{
+        padding: 30px 30px;
+        background-color: #000a;
+        background-image: linear-gradient(180deg, var(--background-color), var(--background-color) 50%,var(--background-color)), 
+                        url(../img/background.jpg);
+        background-blend-mode: darken;
+        background-position: 90%;
+    }
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+/*footer{
+    display: flex;
+    justify-content: center;
+}
+
+.ass{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
 }
