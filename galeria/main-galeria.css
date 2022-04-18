@@ -1,5 +1,8 @@
 main{
     flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .gallery-container1,

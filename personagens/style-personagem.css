@@ -31,6 +31,7 @@ body{
                         url(../img/background.jpg);
         background-blend-mode: darken;
         background-position: 90%;
+        background-attachment: fixed;
     }
 }
 
