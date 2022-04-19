@@ -5,16 +5,9 @@ main{
     justify-content: center;
 }
 
-/*.title {
-    height: 12%;
-    color:#ECEDF1;
-    font-family: 'Mulish', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    font-weight: bold;
-    font-size: 2.3rem;
-}*/
+.title-more {
+    display: none;
+}
 
 .info {
     height: 65vh;
@@ -39,7 +32,7 @@ main{
     border-radius: 25px 5px;
     border: 1.8px solid #ECEDF1;
     background-color: rgba(255, 255, 255, 0.080);
-    transition: all 1s;
+    transition: all .8s;
 }
 
 .img-content {
@@ -55,7 +48,8 @@ main{
 }
 
 .text-content {
-    display: none;
+    height: 0;
+    color: transparent;
 }
 
 .strange:hover,
@@ -65,14 +59,17 @@ main{
 .miss:hover {
     margin-top: 3%;
     width: 14.3vw;
-    height: 65vh;
+    height: 60vh;
     gap: 8px;
     font-family: 'Mulish', sans-serif;
     background-color: rgba(255, 255, 255, 0.5);
-    padding: 10px;
+    padding: 18px;
+    padding-top: 6.5%;
     border-radius: 20px;
     border: 2.3px solid #ECEDF1;
-    transition: all 1s;
+    transition: all .8s;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .strange:hover .name-content,
@@ -87,27 +84,55 @@ main{
 .wanda:hover .text-content,
 .profX:hover .text-content,
 .wong:hover .text-content,
-.miss:hover .text-content{
-    display: block;
+.miss:hover .text-content {
+    color: #000;
     font-size: 0.93rem;
     text-align: center;
 }
 
 @media (max-width:768px){
+    body{
+        z-index: -3;
+    }
+    main{
+        overflow-y: auto;
+        position: relative;
+        z-index: -2;
+    }
     .info{
         display: flex;
         flex-direction: column;
+        gap: 20px;
+        height: auto;
+        position: absolute;
+        top: 30px;
+        z-index: -1;
     }
     .strange,
     .wanda,
     .profX,
     .wong,
     .miss {
-    width: 40vw;
-    height: 50vh;
+        width: 55vw;
+        border-radius: 20px;
+
+    }
+    .strange:hover,
+    .wanda:hover,
+    .profX:hover,
+    .wong:hover,
+    .miss:hover {
+        margin-top: 0%;
+        width: 55vw;
+        height: 64vh;
+        padding: 20px;
     }
 
-    .strange.show ~ .text-content {
-        transform: translate(0);
-    }
+    /* .strange:hover .text-content,
+    .wanda:hover .text-content,
+    .profX:hover .text-content,
+    .wong:hover .text-content,
+    .miss:hover .text-content {
+        color: transparent;
+    } */
 }

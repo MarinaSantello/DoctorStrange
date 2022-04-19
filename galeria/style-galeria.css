@@ -5,6 +5,11 @@
     --background-color: #05182fb0
 }
 
+body, html{
+    position: relative;
+    overflow: hidden;
+}
+
 body{
     height: 100vh;
     background: linear-gradient(180deg, var(--background-color), var(--background-color) 50%,var(--background-color)),
@@ -16,4 +21,12 @@ body{
     display: flex;
     flex-direction: column;
     padding: 70px 128px;
+}
+@keyframes zoom {
+    0% {
+        transform: scale(3);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
