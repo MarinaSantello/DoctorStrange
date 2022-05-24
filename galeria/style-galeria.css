@@ -20,8 +20,15 @@ body{
     background-blend-mode: darken;
     display: flex;
     flex-direction: column;
-    padding: 70px 128px;
+    padding: padding: 70px 128px;
 }
+
+@media (max-width:768px){
+    body{
+        padding: 30px 30px; 
+    }
+}
+
 @keyframes zoom {
     0% {
         transform: scale(3);

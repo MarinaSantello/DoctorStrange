@@ -4,8 +4,7 @@ Projeto construído durante as aulas de Linguagem de Marcação, no curso de des
 
 ![](./img/web.png)
 
-<img src="./img/mobile.png" width="250px">
-<img src="./img/menu.png" width="250px">
+<img src="./img/mobile.png" width="230px">  <img src="./img/menu.png" width="230px">
 
 ---
 
@@ -36,5 +35,5 @@ Landing page são páginas com foco principal na conversão de visitantes, assim
 
 ---
 
-## Autor
+## Autora
 ### [Marina Santello](https://github.com/MarinaSantello)
