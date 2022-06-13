@@ -20,7 +20,7 @@ body{
     background-blend-mode: darken;
     display: flex;
     flex-direction: column;
-    padding: padding: 70px 128px;
+    padding: 70px 128px;
 }
 
 @media (max-width:768px){

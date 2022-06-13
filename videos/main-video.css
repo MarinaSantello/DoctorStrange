@@ -41,5 +41,26 @@ main{
 }
 
 @media (max-width:768px){
-    
+    .content-container {
+        height: auto;
+    }
+
+    .videos {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .videos iframe {
+        width: 75vw;
+        height: 25vh;
+    }
+
+    .content-container {
+        margin: 0px;
+    }
+
+    .text {
+        font-size: 1.5rem;
+        text-align: center;
+    }
 }
